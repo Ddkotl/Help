@@ -1,1 +1,9 @@
+#установка докера 
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo apt-get install docker-compose-plugin
+
+#информация
+docker ps #все работающие контейнеры
+docker ps -a #все существующие контейнеры
 
