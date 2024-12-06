@@ -6,4 +6,25 @@ sudo apt-get install docker-compose-plugin
 #информация
 docker ps #все работающие контейнеры
 docker ps -a #все существующие контейнеры
+docker inspect [idcont] #инфа о контейнере
+docker stats [idcont] #потребление ресурсов контейнером
+
+#действия с контейнерами
+docker [comand] [flag] [idcont] [comand in container]
+docker run [img]
+docker start [idcont]
+docker pause [idcont]
+docker unpause [idcont]
+docker stop [idcont]
+docker kill [idcont]
+docker rm [idcont]
+-d #режим димона
+--rm #после исполнения команд внутри контейнер удалить
+
+
+#действия с имиджем
+
+#действия с сетями
+
+#действия с волосами
 
