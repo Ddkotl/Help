@@ -1,3 +1,5 @@
+#очистка всего
+docker system prune -a --volume
 #установка докера 
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
@@ -16,6 +18,9 @@ docker logs [idcont] #последние логи
 #действия с контейнерами
 docker [comand] [flag] [idcont] [comand in container]
 docker run [img]
+-p [порт сервера]:[порт контейнера]
+-d #режим димона
+--rm #после исполнения команд внутри контейнер удалить
 docker start [idcont]
 docker pause [idcont]
 docker unpause [idcont]
@@ -23,11 +28,10 @@ docker stop [idcont]
 docker kill [idcont]
 docker rm [idcont]
 docker exec -it [idcont] /bin/bash #заходим внутрь контейнера
--d #режим димона
---rm #после исполнения команд внутри контейнер удалить
 
 
 #действия с имиджем
+docker rmi [имя или id] #удалить имэдж
 
 #действия с сетями
 
