@@ -19,18 +19,22 @@ docker logs [idcont] #последние логи
 docker [comand] [flag] [idcont] [comand in container]
 docker run [img]
 -p [порт сервера]:[порт контейнера]
+-v [путь на сервере]:[путь в контейнере]
+-e #задаёт переменные
 -d #режим димона
 --rm #после исполнения команд внутри контейнер удалить
+--name #задает имя
 docker start [idcont]
 docker pause [idcont]
 docker unpause [idcont]
 docker stop [idcont]
-docker kill [idcont]
+docker kill [i
+dcont]
 docker rm [idcont]
 docker exec -it [idcont] /bin/bash #заходим внутрь контейнера
 
-
 #действия с имиджем
+docker pull [имя] #скачивает образ
 docker rmi [имя или id] #удалить имэдж
 
 #действия с сетями
